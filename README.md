@@ -51,7 +51,9 @@ Tests cover both token orderings, actual v4 swaps and LP accounting, PositionMan
 
 ## Deployment
 
-No public deployment is recorded yet. Arbitrum Sepolia is the initial demo target. Addresses and verified explorer links will be added after deployment.
+The [Arbitrum Sepolia deployment](deployments/421614.json) uses the canonical Uniswap v4 PoolManager. Its [hook](https://sepolia.arbiscan.io/address/0x5A4fE20e7Eda9638E78676a8E57fD741F26EE080#code) and [Chainlink adapter](https://sepolia.arbiscan.io/address/0x2caE68f2C6977568FD9ed68594b85b6Cb7cbD414#code) have verified source on Arbiscan. The pool was seeded full-range with 1,000,000 demo USDC and approximately 1,284 demo SPY.
+
+This demonstration binds the hook to a testnet-only oracle wrapper that forwards Chainlink by default and permits manual experiments. The wrapper, unbacked tokens and website are outside this repository. Production integrations should bind directly to a reviewed oracle. Deployment metadata records the exact binding and runtime hash.
 
 [DeployChainlinkOracle](script/DeployChainlinkOracle.s.sol) configures the external reference. [DeployRwaHook](script/DeployRwaHook.s.sol) mines the required CREATE2 address and deploys the hook. [VerifyPool](script/VerifyPool.s.sol) checks pool wiring, code hash, active liquidity and quotes. Use [Uniswap's deployment registry](https://developers.uniswap.org/docs/protocols/v4/deployments) for the manager and periphery addresses on the selected chain.
 
