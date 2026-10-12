@@ -1,0 +1,19 @@
+name: Solidity
+on: [push, pull_request]
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: v1.4.4
+      - run: forge fmt --check
+      - run: forge build
+      - run: forge lint src -D warnings
+      - run: forge test
