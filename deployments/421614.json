@@ -1,30 +1,30 @@
 {
   "chainId": 421614,
-  "hook": "0x5A4fE20e7Eda9638E78676a8E57fD741F26EE080",
-  "liveOracle": "0x2caE68f2C6977568FD9ed68594b85b6Cb7cbD414",
-  "oracle": "0x16467037b25D30D5cFDe0a1a1100E4d1a9A15135",
+  "hook": "0x88F649701B8C92D2f0537BdD19ABc5cE22756080",
+  "liveOracle": "0x9f7ee9772805cc47868095532Fb099D96313407a",
+  "oracle": "0x391708D49153E885041725ce08CCC6153D1b009A",
   "manager": "0xFB3e0C6F74eB1a21CC1Da29aeC80D2Dfe6C9a317",
   "key": {
-    "currency0": "0x688BB2140337828B722c53B513e04CDb23535cB2",
-    "currency1": "0x6DCBc5C577Ba552143B809bffDcEd21D7182dd5a",
+    "currency0": "0xA9CBc889C345f9e8957ad6866Ec30Fb2125F4FBe",
+    "currency1": "0xdaDAb82D24bd822250ba0477fdC23A505ab721EC",
     "fee": 8388608,
     "tickSpacing": 60,
-    "hooks": "0x5A4fE20e7Eda9638E78676a8E57fD741F26EE080"
+    "hooks": "0x88F649701B8C92D2f0537BdD19ABc5cE22756080"
   },
-  "poolId": "0xbcfb4b8a96ccdd92393ef70766b5da09fabd4ee8dea38ce0adcd25218e41d32a",
-  "hookCodeHash": "0x8187680ce4ec6af53839946f3debab175bab1f5ee7b1c22e7219eccadea0f8d7",
-  "creationTransaction": "0x340e1408a801655e9193843671d0e61f65afad541fea1ed55bbb2acf41606e9e",
-  "deployedAtBlock": "318533647",
-  "seedTransaction": "0x31a4deee8f33ebf488d670742a4da3613df8ba4141dea3f78d585ebf684b369e",
+  "poolId": "0x522ea226a7b5dbada6f809c8a53d2f5616396dc51442c4975c6ba07390bfca37",
+  "hookCodeHash": "0xfd2079b5013dbaa3de5720def0ed8c5badf7cb1b6ab6775b2dbb0c47755d4021",
+  "creationTransaction": "0x198c38a0bbc4d3888b8d4d40283ea1ba14ef05ee50aa49dd78e7841f981d4c46",
+  "deployedAtBlock": "318972073",
+  "seedTransaction": "0x664aa23659219a59afdb1f5574103881baf4f35bd27e8da06c1f56d26845ecdf",
   "seed": {
-    "spy": "1283.994709062656487537",
+    "spy": "1285.887236997787928509",
     "usdc": "1000000",
     "tickLower": -887220,
     "tickUpper": 887220,
-    "liquidity": "35832871906430504"
+    "liquidity": "35859269889357590"
   },
-  "asset": "0x6DCBc5C577Ba552143B809bffDcEd21D7182dd5a",
-  "quote": "0x688BB2140337828B722c53B513e04CDb23535cB2",
+  "asset": "0xA9CBc889C345f9e8957ad6866Ec30Fb2125F4FBe",
+  "quote": "0xdaDAb82D24bd822250ba0477fdC23A505ab721EC",
   "assetFeed": "0x4fB44FC4FA132d1a846Bd4143CcdC5a9f1870b06",
   "quoteFeed": "0x0153002d20B96532C639313c2d54c3dA09109309",
   "config": {
@@ -34,7 +34,7 @@
     "initialBandBps": 500,
     "maxOracleAge": 93600
   },
-  "sourceCommit": "96ff5434469870ffea6336a912cf9dac6c924d17",
+  "sourceCommit": "6c4d3df294c6e0e4cd71e73ec785aa31daac39eb",
   "explorer": "https://sepolia.arbiscan.io",
   "oracleBinding": "Testnet-only manual-override wrapper, forwarding ChainlinkOracle by default. Production integrations should bind directly to a reviewed oracle.",
   "notes": "Unbacked demo tokens. No sequencer uptime feed in this testnet configuration. Sources verified on Arbiscan."
