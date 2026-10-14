@@ -124,5 +124,6 @@
     ],
     "limitation": "Recent reports establish that prices are being pushed; they do not guarantee future availability or real-time market accuracy."
   },
-  "notes": "Unbacked demo tokens. No sequencer uptime feed in this testnet configuration. Sources verified on Arbiscan."
+  "notes": "Unbacked demo tokens. No sequencer uptime feed in this testnet configuration. Sources verified on Arbiscan.",
+  "sourceCommit": "6c4d3df294c6e0e4cd71e73ec785aa31daac39eb"
 }
